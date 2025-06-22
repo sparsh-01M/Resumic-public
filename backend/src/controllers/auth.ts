@@ -1,4 +1,4 @@
-import '../config/firebase';
+import '../config/firebase.js';
 import { Request, Response } from 'express';
 import jwt from 'jsonwebtoken';
 import { User } from '../models/User.js';
