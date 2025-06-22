@@ -5,7 +5,7 @@ import dotenv from 'dotenv';
 import { connectDB } from './config/database.js';
 import authRoutes from './routes/auth.js';
 import userRoutes from './routes/users.js';
-import resumeRoutes from './routes/resume.js';
+// import resumeRoutes from './routes/resume.js';
 import contactRoutes from './routes/contact.js';
 // import githubRoutes from './routes/github.js';
 // import linkedinRoutes from './routes/linkedin.js';
@@ -84,7 +84,7 @@ app.use((err: any, req: express.Request, res: express.Response, next: express.Ne
 // Routes
 app.use('/api/auth', authRoutes);
 app.use('/api/users', userRoutes);
-app.use('/api/resume', resumeRoutes);
+// app.use('/api/resume', resumeRoutes);
 app.use('/api/contact', contactRoutes);
 // app.use('/api/auth/github', githubRoutes);
 // app.use('/api/linkedin', linkedinRoutes);
