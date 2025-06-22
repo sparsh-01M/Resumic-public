@@ -27,7 +27,8 @@ const allowedOrigins = [
   'https://resumicai.vercel.app',
   'https://resumic-public-frontend.vercel.app',
   'https://getresumic.vercel.app',
-  'https://www.resumic.in'
+  'https://www.resumic.in',
+  'https://resumic-public.onrender.com'
 ];
 
 // Add any additional origins from environment variables
