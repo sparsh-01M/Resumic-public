@@ -2,7 +2,7 @@ import { Request, Response } from 'express';
 import { User, IUser, ParsedResumeData } from '../models/User.js';
 import { Resume, IResume } from '../models/Resume.js';
 import { uploadToCloudinary, deleteFromCloudinary } from '../services/cloudinary.js';
-import { TemplateResumeData } from '../types/resume.js';
+// import { TemplateResumeData } from '../types/resume.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { transformResumeData } from '../utils/resumeDataTransformer';
 

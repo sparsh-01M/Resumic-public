@@ -1,6 +1,6 @@
 // Utility to transform/normalize resume data for MongoDB (backend version)
 
-import { IUser } from '../models/User';
+// import { IUser } from '../models/User';
 
 export interface ParsedResumeData {
   name: string;
