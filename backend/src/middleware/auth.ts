@@ -31,7 +31,7 @@ export const auth = async (req: Request, res: Response, next: NextFunction) => {
       return res.status(401).json({ message: 'User not found' });
     }
 
-    req.user = { id: decoded.userId, ...user } as IUser & { _id: string };
+    req.user = { id: decoded.userId, ...user } as unknown as IUser & { _id: string };
     next();
   } catch (error) {
     res.status(401).json({ message: 'Invalid token' });

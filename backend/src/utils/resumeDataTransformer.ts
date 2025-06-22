@@ -1,6 +1,6 @@
 // Utility to transform/normalize resume data for MongoDB (backend version)
 
-// import { IUser } from '../models/User';
+import { IUser } from '../models/User.js';
 
 export interface ParsedResumeData {
   name: string;
@@ -121,7 +121,7 @@ export function transformResumeData(
     website,
     linkedin: linkedinUrl,
     github: githubUrl,
-    education: (parsed.education || []).map(edu => ({
+    education: (parsed.education || []).map((edu: any) => ({
       institution: edu.institution || '',
       degree: edu.degree || '',
       startDate: edu.startYear || '',
@@ -129,7 +129,7 @@ export function transformResumeData(
       gpa: edu.gpa,
       coursework: Array.isArray(edu.coursework) ? edu.coursework.join(', ') : edu.coursework
     })),
-    experience: (parsed.experience || []).map(exp => {
+    experience: (parsed.experience || []).map((exp: any) => {
       const { startDate, endDate } = parseDuration(exp.duration || '');
       return {
         company: exp.company || '',
@@ -140,7 +140,7 @@ export function transformResumeData(
         highlights: exp.description ? [exp.description] : []
       };
     }),
-    projects: (parsed.projects || []).map(proj => ({
+    projects: (parsed.projects || []).map((proj: any) => ({
       name: proj.name || '',
       description: proj.description ? [proj.description] : [],
       technologies: proj.technologies ? proj.technologies.join(', ') : undefined,
