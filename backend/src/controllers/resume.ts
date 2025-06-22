@@ -4,7 +4,7 @@ import { Resume, IResume } from '../models/Resume.js';
 import { uploadToCloudinary, deleteFromCloudinary } from '../services/cloudinary.js';
 // import { TemplateResumeData } from '../types/resume.js';
 import { GoogleGenerativeAI } from '@google/generative-ai';
-import { transformResumeData } from '../utils/resumeDataTransformer.js';
+// import { transformResumeData } from '../utils/resumeDataTransformer.js';
 
 interface RequestWithFile extends Request {
   file?: Express.Multer.File;

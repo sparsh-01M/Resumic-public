@@ -2,8 +2,8 @@ import express from 'express';
 import cors from 'cors';
 import authRoutes from './routes/auth.js';
 import resumeRoutes from './routes/resume.js';
-import githubRoutes from './routes/github.js';
-import linkedinRoutes from './routes/linkedin.js';
+// import githubRoutes from './routes/github.js';
+// import linkedinRoutes from './routes/linkedin.js';
 import blogRoutes from './routes/blog.js';
 import guidesRoutes from './routes/guides.js';
 import faqsRoutes from './routes/faqs.js';
@@ -27,9 +27,9 @@ app.get('/', (req, res) => {
 
 // Routes
 app.use('/api/auth', authRoutes);
-app.use('/api/resume', resumeRoutes);
-app.use('/api/github', githubRoutes);
-app.use('/api/linkedin', linkedinRoutes);
+app.use('/api/resumes', resumeRoutes);
+// app.use('/api/github', githubRoutes);
+// app.use('/api/linkedin', linkedinRoutes);
 app.use('/api/blog', blogRoutes);
 app.use('/api/guides', guidesRoutes);
 app.use('/api/faqs', faqsRoutes);
