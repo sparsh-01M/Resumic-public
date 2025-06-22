@@ -15,7 +15,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://resumicai.vercel.app', 'https://resumic-public-frontend.vercel.app', 'https://getresumic.vercel.app', 'https://www.resumic.in', 'https://resumic-public.onrender.com'],
+  origin: ['http://localhost:5173', 'https://getresumic.vercel.app', 'https://www.resumic.in'],
   credentials: true
 }));
 app.use(express.json());
