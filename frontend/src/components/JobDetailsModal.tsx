@@ -120,9 +120,9 @@ const JobDetailsModal = ({ job, isOpen, onClose }: JobDetailsModalProps) => {
                     <span className={`px-3 py-1 rounded-full text-xs font-medium ${getCategoryColor(job.category)}`}>
                       {job.category.charAt(0).toUpperCase() + job.category.slice(1)}
                     </span>
-                    <span className="text-sm text-gray-500">
+                    {/* <span className="text-sm text-gray-500">
                       Posted {formatDate(job.createdAt)}
-                    </span>
+                    </span> */}
                   </div>
                   <button
                     onClick={onClose}
