@@ -25,7 +25,8 @@ const allowedOrigins = [
   'http://localhost:5173',
   'https://getresumic.vercel.app',
   // 'https://www.resumic.in',
-  'https://resumic-public-frontend.vercel.app'
+  'https://resumic-public-frontend.vercel.app',
+  'https://www.channlr.com'
 ];
 
 // Add any additional origins from environment variables

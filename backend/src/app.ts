@@ -12,7 +12,7 @@ const app = express();
 
 // Middleware
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://getresumic.vercel.app', 'https://resumic-public-frontend.vercel.app'],
+  origin: ['http://localhost:5173', 'https://getresumic.vercel.app', 'https://resumic-public-frontend.vercel.app', 'https://www.channlr.com'],
   credentials: true
 }));
 app.use(express.json());
