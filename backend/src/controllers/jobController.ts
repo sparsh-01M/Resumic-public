@@ -7,7 +7,7 @@ export const getAllJobs = async (req: Request, res: Response) => {
   try {
     const {
       page = 1,
-      limit = 10,
+      limit = 3,
       search,
       category,
       location,
