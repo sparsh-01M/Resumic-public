@@ -71,8 +71,8 @@ export const getAllJobs = async (req: Request, res: Response) => {
         currentPage: Number(page),
         totalPages: Math.ceil(total / Number(limit)),
         totalJobs: total,
-        // hasNext: skip + jobs.length < total,
-        hasNext: Number(page) < Math.ceil(total / Number(limit)),
+        hasNext: skip + jobs.length < total,
+        // hasNext: Number(page) < Math.ceil(total / Number(limit)),
         hasPrev: Number(page) > 1,
       },
     });
