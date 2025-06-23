@@ -24,7 +24,8 @@ const port = process.env.PORT || 5001;
 const allowedOrigins = [
   'http://localhost:5173',
   'https://getresumic.vercel.app',
-  'https://www.resumic.in'
+  // 'https://www.resumic.in',
+  'https://resumic-public-frontend.vercel.app'
 ];
 
 // Add any additional origins from environment variables
