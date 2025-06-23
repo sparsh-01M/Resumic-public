@@ -17,7 +17,8 @@ const WaitlistPage: React.FC = () => {
   useEffect(() => {
     const checkWaitlist = async (email: string) => {
       try {
-        const response = await fetch(`/api/waitlist/check?email=${encodeURIComponent(email)}`);
+        // const response = await fetch(`VITE_API_URL.ENV/api/waitlist/check?email=${encodeURIComponent(email)}`);
+        const response = await fetch(`${import.meta.env.VITE_API_URL}/waitlist/check?email=${encodeURIComponent(email)}`);
         const data = await response.json();
         setAlreadyJoined(!!data.joined);
       } catch (err) {
@@ -40,7 +41,7 @@ const WaitlistPage: React.FC = () => {
     setSuccess(false);
     setAlreadyJoined(false);
     try {
-      const response = await fetch('/api/waitlist/join', {
+      const response = await fetch(`${import.meta.env.VITE_API_URL}/waitlist/join`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name, email }),
