@@ -78,12 +78,6 @@ interface GitHubProfileResponse {
     url: string;
   };
 }
-
-interface LinkedInProfileResponse {
-  success: boolean;
-  message: string;
-}
-
 interface LinkedInData {
   profileUrl: string;
   name: string;
@@ -191,32 +185,6 @@ interface SaveTemplateResponse {
     filePath: string;
   };
 }
-
-interface CreateSubscriptionRequest {
-  planId: string;
-  planName: string;
-  amount: number;
-  billingCycle: 'monthly' | 'yearly';
-  currency: string;
-  paypalOrderId: string;
-}
-
-interface CreateSubscriptionResponse {
-  subscriptionId: string;
-  status: string;
-}
-
-interface UpdateSubscriptionStatusRequest {
-  subscriptionId: string;
-  status: string;
-  paypalOrderId: string;
-}
-
-interface UpdateSubscriptionStatusResponse {
-  success: boolean;
-  message: string;
-}
-
 interface GitHubProject {
   id: string;
   name: string;
