@@ -46,7 +46,7 @@ const HomePage = () => {
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 dark:text-white mb-6">
                 Create ATS-Optimized Resumes with{' '}
                 <span className="bg-clip-text text-transparent bg-gradient-to-r from-primary-600 to-accent-500 dark:from-primary-400 dark:to-accent-400">
-                  AI
+                  'ZERO' manual data entry
                 </span>
               </h1>
               <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
@@ -149,7 +149,7 @@ const HomePage = () => {
       <section className="py-12 bg-gray-50 dark:bg-gray-800">
         <div className="container mx-auto px-4 md:px-6">
           <p className="text-center text-sm font-medium text-gray-600 dark:text-gray-400 mb-8">
-            TRUSTED BY PROFESSIONALS FROM
+            JOINED BY PROFESSIONALS FROM
           </p>
           <div className="flex flex-wrap justify-center items-center gap-x-12 gap-y-8">
             {['Google', 'Microsoft', 'Amazon', 'Meta', 'Apple'].map((company) => (
@@ -203,7 +203,7 @@ const HomePage = () => {
               </div>
               <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Upload Your Resume</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Upload your existing resume or connect your LinkedIn profile to get started quickly.
+                Upload your existing resume (not necessary) or connect your LinkedIn profile to get started quickly.
               </p>
               <div className="absolute -right-2 top-1/2 transform -translate-y-1/2 hidden md:block">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -231,9 +231,9 @@ const HomePage = () => {
               <div className="w-12 h-12 bg-accent-100 dark:bg-accent-900 rounded-full flex items-center justify-center mb-4">
                 <CheckCircle className="w-6 h-6 text-accent-600 dark:text-accent-400" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Download ATS-Optimized Resume</h3>
+              <h3 className="text-xl font-semibold text-gray-900 dark:text-white mb-2">Enter Job role and Download.</h3>
               <p className="text-gray-600 dark:text-gray-400">
-                Review your enhanced resume with 80+ ATS score and download it in multiple formats.
+                Get the 80+ ATS, job specified resume in few seconds and download it in multiple formats.
               </p>
             </motion.div>
           </motion.div>
@@ -267,40 +267,41 @@ const HomePage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <FeatureCard
               icon={<FileText className="w-6 h-6" />}
-              title="Resume Parsing"
-              description="Upload your existing resume and our AI will analyze and enhance it automatically."
+              title="No- Code Personal Portfolio websites"
+              description="Users can generate their highly interactive and impressive portfolios now with no code."
               color="primary"
             />
             <FeatureCard
               icon={<Github className="w-6 h-6" />}
-              title="GitHub Integration"
-              description="Connect your GitHub to extract projects, contributions, and technical skills."
+              title="Job specified Resume"
+              description="Get a job specified resume by just entering the job description with an ATS over 80 with '0' manual data entry."
               color="secondary"
             />
             <FeatureCard
               icon={<Linkedin className="w-6 h-6" />}
-              title="LinkedIn Sync"
-              description="Sync with LinkedIn to include your work experience, skills, and certifications."
+              title="Job Portal"
+              description="Freshers targeted jobs portal for opening in High Potential Global Startups backed by YC and other top VCs"
               color="accent"
+            />
+            <FeatureCard
+              icon={<CheckCircle className="w-6 h-6" />}
+              title="Deployment"
+              description="Deploy the portfolio website live with just one click, no questions asked."
+              color="error"
             />
             <FeatureCard
               icon={<Award className="w-6 h-6" />}
               title="ATS Optimization"
-              description="Get an 80+ ATS score with AI-powered suggestions to pass any applicant tracking system."
+              description="Get a resume especially designed for that job with an 80+ ATS score with AI-powered suggestions to pass any applicant tracking system."
               color="success"
             />
             <FeatureCard
               icon={<CheckCircle className="w-6 h-6" />}
               title="Multiple Templates"
-              description="Choose from professionally designed templates tailored for different industries."
+              description="Choose from professionally designed templates tailored for different industries for resumes and portfolios."
               color="warning"
             />
-            <FeatureCard
-              icon={<CheckCircle className="w-6 h-6" />}
-              title="Job Matching"
-              description="Target specific job roles and get tailored suggestions to match requirements."
-              color="error"
-            />
+            
           </div>
         </div>
       </section>

@@ -116,8 +116,8 @@ const ContactPage = () => {
                   <div>
                     <h3 className="text-sm font-medium text-gray-500 dark:text-gray-400">Address</h3>
                     <p className="text-gray-900 dark:text-white">
-                      Still finding<br />
-                      Yet to be decided
+                      San Francisco Bay Area<br />
+                      California, US
                     </p>
                   </div>
                 </div>
