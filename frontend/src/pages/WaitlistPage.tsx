@@ -70,6 +70,7 @@ const WaitlistPage: React.FC = () => {
     <div className="min-h-screen flex flex-col items-center justify-center bg-gradient-to-br from-primary-50 to-primary-100 dark:from-gray-900 dark:to-gray-800 px-4">
       <div className="w-full max-w-md bg-white dark:bg-gray-900 rounded-2xl shadow-xl p-8 flex flex-col items-center">
         <h1 className="text-3xl font-bold mb-4 text-primary-700 dark:text-primary-300 text-center">Join the Waitlist</h1>
+        <p className="mb-6 text-gray-600 dark:text-gray-300 text-center">To get one month of Resumic Pro free.</p>
         <p className="mb-6 text-gray-600 dark:text-gray-300 text-center">Be the first to know when we launch! Enter your name and email below.</p>
         {showThankYou ? (
           <>
