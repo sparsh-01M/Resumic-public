@@ -54,7 +54,7 @@ const HomePage = () => {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button as={Link} to={isAuthenticated ? "/dashboard" : "/register"} variant="primary" size="lg">
-                  {isAuthenticated ? "Go to Dashboard" : "Get Started for Free"}
+                  {isAuthenticated ? "Join the waitlist Now!" : "Sign In and Join the Waitlist Now!"}
                 </Button>
                 <Button as={Link} to="/about" variant="outline" size="lg">
                   Learn More
